@@ -1,0 +1,28 @@
+<!DOCTYPE html> <! ––much of this code borrowed from David Wagner-->
+<html>
+<head>
+    <title>University Database</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Major</th>
+        <th>Advisor</th>
+        <th>GPA</th>
+    </tr>
+    {% for r in output %}
+    <tr>
+        <td>{{ r.StudentID }}</td>
+        <td>{{ r.FirstName }}</td>
+        <td>{{ r.LastName }}</td>
+        <td>{{ r.Major }}</td>
+        <td>{{ r.Advisor }}</td>
+        <td>{{ r.GPA }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
